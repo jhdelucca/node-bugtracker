@@ -1,0 +1,264 @@
+Microsoft Windows [versão 10.0.18362.356]
+(c) 2019 Microsoft Corporation. Todos os direitos reservados.
+
+C:\Users\Operador>cd F:\Pos Graduação\Node\FullStackLab
+
+C:\Users\Operador>cd C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab
+
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab> cd bugtracker
+
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (bugtracker)
+version: (1.0.0)
+description:
+entry point: (index.js)
+test command:
+git repository:
+keywords:
+author:
+license: (ISC)
+About to write to C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker\package.json:
+
+{
+  "name": "bugtracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes)
+
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>dir
+ O volume na unidade C não tem nome.
+ O Número de Série do Volume é FE4A-4DE8
+
+ Pasta de C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker
+
+12/11/2019  11:24    <DIR>          .
+12/11/2019  11:24    <DIR>          ..
+12/11/2019  11:24               206 package.json
+               1 arquivo(s)            206 bytes
+               2 pasta(s)   145.773.395.968 bytes disponíveis
+
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>code .
+
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>npm instal express
+
+Usage: npm <command>
+
+where <command> is one of:
+    access, adduser, audit, bin, bugs, c, cache, ci, cit,
+    completion, config, create, ddp, dedupe, deprecate,
+    dist-tag, docs, doctor, edit, explore, get, help,
+    help-search, hook, i, init, install, install-test, it, link,
+    list, ln, login, logout, ls, outdated, owner, pack, ping,
+    prefix, profile, prune, publish, rb, rebuild, repo, restart,
+    root, run, run-script, s, se, search, set, shrinkwrap, star,
+    stars, start, stop, t, team, test, token, tst, un,
+    uninstall, unpublish, unstar, up, update, v, version, view,
+    whoami
+
+npm <command> -h  quick help on <command>
+npm -l            display full usage info
+npm help <term>   search for help on <term>
+npm help npm      involved overview
+
+Specify configs in the ini-formatted file:
+    C:\Users\Operador\.npmrc
+or on the command line via: npm <command> --key value
+Config info can be viewed via: npm help config
+
+npm@6.4.1 C:\Program Files\nodejs\node_modules\npm
+
+Did you mean one of these?
+    install
+    unstar
+    uninstall
+
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>npm install express
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN bugtracker@1.0.0 No description
+npm WARN bugtracker@1.0.0 No repository field.
+
++ express@4.17.1
+added 50 packages from 37 contributors and audited 126 packages in 14.621s
+found 0 vulnerabilities
+
+
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>node index.js
+^C
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>nodes
+'nodes' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>
+
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>node index.js
+^C
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>node index.js
+^C
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>node index.js[
+internal/modules/cjs/loader.js:582
+    throw err;
+    ^
+
+Error: Cannot find module 'C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker\index.js['
+    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:580:15)
+    at Function.Module._load (internal/modules/cjs/loader.js:506:25)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:741:12)
+    at startup (internal/bootstrap/node.js:285:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:739:3)
+
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>node index.js
+^C
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>node index.js
+^C
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>node index.js
+^C
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>npm install ejs
+npm WARN bugtracker@1.0.0 No description
+npm WARN bugtracker@1.0.0 No repository field.
+
++ ejs@2.7.1
+added 1 package from 2 contributors and audited 127 packages in 8.221s
+found 0 vulnerabilities
+
+
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>node index.js
+^C
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>node index.js
+^C
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>npm instal body-parser
+^Cnpm ERR! code EPIPE
+npm ERR! errno EPIPE
+npm ERR! syscall write
+npm ERR! EPIPE: broken pipe, write
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Operador\AppData\Roaming\npm-cache\_logs\2019-11-12T17_42_30_206Z-debug.log
+Deseja finalizar o arquivo em lotes (S/N)? s
+
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>npm install body-parser
+npm WARN bugtracker@1.0.0 No description
+npm WARN bugtracker@1.0.0 No repository field.
+
++ body-parser@1.19.0
+updated 1 package and audited 159 packages in 8.134s
+found 0 vulnerabilities
+
+
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>node index.js
+^C
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>npm install google-spreadsheet
+npm WARN bugtracker@1.0.0 No description
+npm WARN bugtracker@1.0.0 No repository field.
+
++ google-spreadsheet@2.0.8
+added 75 packages from 126 contributors and audited 404 packages in 57.315s
+found 0 vulnerabilities
+
+
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>node tester-planilha.js
+planilha aberta
+
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>node tester-planilha.js
+planilha aberta
+{ id:
+   'https://spreadsheets.google.com/feeds/worksheets/1tfBEtaxBpdXkuRXytXKHZt9nO4KiT6XcacxSTBVgIno/private/full',
+  title: 'Bugs Compartilhados',
+  updated: '2019-11-12T18:09:38.164Z',
+  author: { name: 'delucca62', email: 'delucca62@gmail.com' },
+  worksheets:
+   [ SpreadsheetWorksheet {
+       url:
+        'https://spreadsheets.google.com/feeds/worksheets/1tfBEtaxBpdXkuRXytXKHZt9nO4KiT6XcacxSTBVgIno/od6',
+       id: 'od6',
+       title: 'Sheet1',
+       rowCount: 1000,
+       colCount: 26,
+       _links: [Array],
+       resize: [Function: _setInfo],
+       setTitle: [Function],
+       clear: [Function],
+       getRows: [Function],
+       getCells: [Function],
+       addRow: [Function],
+       bulkUpdateCells: [Function],
+       del: [Function],
+       setHeaderRow: [Function] } ] }
+
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>node tester-planilha.js
+planilha aberta
+events.js:167
+      throw er; // Unhandled 'error' event
+      ^
+
+TypeError: Cannot read property '0' of undefined
+    at doc.getInfo (C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker\tester-planilha.js:11:45)
+    at C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker\node_modules\google-spreadsheet\index.js:210:7
+    at C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker\node_modules\google-spreadsheet\index.js:176:17
+    at Parser.<anonymous> (C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker\node_modules\xml2js\lib\parser.js:306:18)
+    at Parser.emit (events.js:182:13)
+    at SAXParser.onclosetag (C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker\node_modules\xml2js\lib\parser.js:264:26)
+    at emit (C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker\node_modules\sax\lib\sax.js:624:35)
+    at emitNode (C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker\node_modules\sax\lib\sax.js:629:5)
+    at closeTag (C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker\node_modules\sax\lib\sax.js:889:7)
+    at SAXParser.write (C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker\node_modules\sax\lib\sax.js:1436:13)
+Emitted 'error' event at:
+    at Parser.exports.Parser.Parser.parseString (C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker\node_modules\xml2js\lib\parser.js:329:16)
+    at Parser.parseString (C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker\node_modules\xml2js\lib\parser.js:5:59)
+    at Request._callback (C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker\node_modules\google-spreadsheet\index.js:166:24)
+    at Request.self.callback (C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker\node_modules\request\request.js:185:22)
+    at Request.emit (events.js:182:13)
+    at Request.<anonymous> (C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker\node_modules\request\request.js:1161:10)
+    at Request.emit (events.js:182:13)
+    at IncomingMessage.<anonymous> (C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker\node_modules\request\request.js:1083:12)
+    at Object.onceWrapper (events.js:273:13)
+    at IncomingMessage.emit (events.js:187:15)
+
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>node tester-planilha.js
+planilha aberta
+Linha inserida !
+
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>node index.js
+planilha aberta
+^C
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>s
+'s' não é reconhecido como um comando interno
+ou externo, um programa operável ou um arquivo em lotes.
+
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>node index.js
+planilha aberta
+^C
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>node index.js
+bugtracker rodando na porta 3000
+^C
+C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker>npm start
+
+> bugtracker@1.0.0 start C:\Users\Operador\Documents\Pos Graduação\Node\FullStackLab\bugtracker
+> node index.js
+
+bugtracker rodando na porta 3000
+planilha aberta
