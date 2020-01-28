@@ -1,25 +1,47 @@
 const express = require('express');
 const app = express();
+var passport = require('passport');
 const path = require('path');
 const bodyParser = require('body-parser');
 const GoogleSpreadsheet = require('google-spreadsheet');
 const credentials = require('./bugtracker.json');
 const { promisify } = require('util');
 const sgMail = require('@sendgrid/mail');
+const loginRouter = require('./routes/login');
+const logoutRouter = require('./routes/logout');
 
-const docId = '1tfBEtaxBpdXkuRXytXKHZt9nO4KiT6XcacxSTBVgIno';
+require('./configs/google.strategy');
+app.use(require('express-session')({ secret: 'shhhh...', resave: true, saveUninitialized: true }));
+app.use(passport.initialize());
+app.use(passport.session());
+
+const docId = 'ID-SPREADSHEET';
 const worksheetIndex = 0;
-const sendGridKey = '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';
+const sendGridKey = 'SEND-GRID-KEY';
 app.set("view engine", "ejs");
 app.set("views", path.resolve(__dirname, "views"));
 
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use('/login', loginRouter);
+app.use('/logout', logoutRouter);
+
+function ensureAuthenticated(req, res, next) {
+    if (req.isAuthenticated()) {
+      return next();
+    }
+  
+    res.redirect('/');
+  }
 
 app.get('/', (request, response) => {
-    response.render('home');
+    response.render('login');
 });
 
-app.post('/', async (request, response) => {
+app.get('/home' , ensureAuthenticated , (req,res) => {
+    res.render('home');
+})
+
+app.post('/home', async (request, response) => {
     try {
         const doc = new GoogleSpreadsheet(docId);
         await promisify(doc.useServiceAccountAuth)(credentials);
@@ -39,17 +61,17 @@ app.post('/', async (request, response) => {
         });
 
         // se for critico
-        if(request.body.issueType === 'CRITICAL') {
-        sgMail.setApiKey(sendGridKey);
-        const msg = {
-            to: 'delucca62@gmail.com',
-            from: 'jhdbarros@hotmail.com',
-            subject: 'BUG critico reportado',
-            text: ` O usuário ${request.body.name} reportou um problema. `,
-            html: ` O usuário ${request.body.name} reportou um problema. `
-        };
-        await sgMail.send(msg);
-    }
+        if (request.body.issueType === 'CRITICAL') {
+            sgMail.setApiKey(sendGridKey);
+            const msg = {
+                to: 'email-desejado',
+                from: 'email-desejado',
+                subject: 'BUG critico reportado',
+                text: ` O usuário ${request.body.name} reportou um problema. `,
+                html: ` O usuário ${request.body.name} reportou um problema. `
+            };
+            await sgMail.send(msg);
+        }
         response.render('sucess')
     } catch{
         response.send("Erro ao enviar formulario");
@@ -57,6 +79,15 @@ app.post('/', async (request, response) => {
     }
 });
 
+app.get('/auth/google',
+    passport.authenticate('google', { scope: ['profile'] }));
+
+app.get('/auth/google/callback',
+    passport.authenticate('google', { failureRedirect: '/login' }),
+    function (req, res) {
+        // Successful authentication, redirect home.
+        res.redirect('/home');
+    });
 
 
 
